@@ -26,7 +26,7 @@ defmodule Rummage.Phoenix.View do
       defp helpers do
         unquote(opts[:helpers]) ||
         Rummage.Phoenix.default_helpers ||
-        make_helpers_name_from_topmost_namespace
+        make_helpers_name_from_topmost_namespace()
       end
 
       defp make_helpers_name_from_topmost_namespace do
